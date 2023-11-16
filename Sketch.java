@@ -78,6 +78,7 @@ public class Sketch extends PApplet {
     textFont(scoreFont, 20);
     text("Score: " + intTimeSpent, (float)(width * 0.75), (float)(height * 0.05));
 
+
     // Calculates if the Rocket hits a meteor
     if (dist(fltRocketX, fltRocketY - imgRocket.height / 2, fltMeteorX, fltMeteorY) < fltMeteorRadius ||
         dist(fltRocketX + imgRocket.width / 2, fltRocketY - imgRocket.height / 2, fltMeteorX, fltMeteorY) < fltMeteorRadius ||
@@ -91,6 +92,7 @@ public class Sketch extends PApplet {
       text("Your Final Score: " + intTimeSpent, (float)(width * 0.1), (float)(height * 0.5));
     }
 
+    
     // Calculates if the Rocket hits a missile
     else if (fltRocketX + imgRocket.width > fltMissileX && fltRocketX < fltMissileX + imgMisile.width && 
              fltRocketY + imgRocket.height > fltMissileY && fltRocketY < fltMissileY + imgMisile.height) {
@@ -102,6 +104,8 @@ public class Sketch extends PApplet {
       text("You lost", (float)(width * 0.3), (float)(height * 0.4));
       text("Your Final Score: " + intTimeSpent, (float)(width * 0.1), (float)(height * 0.5));
     }
+
+
     else {
       
       // Loops through the background:
