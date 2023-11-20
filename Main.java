@@ -1,8 +1,9 @@
 import processing.core.PApplet;
 
 /**
- * Main class to execute sketch
- * @author 
+ * 
+ * Description: Space game where you move your mouse to dodge meteors and missiles
+ * @author: Joshua Yin
  *
  */
 class Main {
